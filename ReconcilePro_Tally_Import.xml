@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENVELOPE>
+  <HEADER>
+    <TALLYREQUEST>Import Data</TALLYREQUEST>
+  </HEADER>
+  <BODY>
+    <IMPORTDATA>
+      <REQUESTDESC>
+        <REPORTNAME>Vouchers</REPORTNAME>
+      </REQUESTDESC>
+      <REQUESTDATA>
+        
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER
+            VCHTYPE="Receipt"
+            ACTION="Create"
+            OBJVIEW="Accounting Voucher View">
+
+            <DATE>20261105</DATE>
+            <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>RP-cmw3vuo0t000566womruysd8c</VOUCHERNUMBER>
+            <NARRATION>Settlement received for order ORD-2001</NARRATION>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>No</ISINVOICE>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Bank Account</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>1313.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Marketplace Receivable</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>-1313.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+          </VOUCHER>
+        </TALLYMESSAGE>
+      
+
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER
+            VCHTYPE="Receipt"
+            ACTION="Create"
+            OBJVIEW="Accounting Voucher View">
+
+            <DATE>20261105</DATE>
+            <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>RP-cmw3wmzt1000066cky79nkxg5</VOUCHERNUMBER>
+            <NARRATION>Settlement received for order ORD-3001</NARRATION>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>No</ISINVOICE>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Bank Account</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>1800.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Marketplace Receivable</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>-1800.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+          </VOUCHER>
+        </TALLYMESSAGE>
+      
+
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER
+            VCHTYPE="Receipt"
+            ACTION="Create"
+            OBJVIEW="Accounting Voucher View">
+
+            <DATE>20261105</DATE>
+            <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>RP-cmw3wmzt3000166ckwfcgo2hb</VOUCHERNUMBER>
+            <NARRATION>Settlement received for order ORD-3002</NARRATION>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>No</ISINVOICE>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Bank Account</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>1300.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Marketplace Receivable</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>-1300.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+          </VOUCHER>
+        </TALLYMESSAGE>
+      
+
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER
+            VCHTYPE="Receipt"
+            ACTION="Create"
+            OBJVIEW="Accounting Voucher View">
+
+            <DATE>20261105</DATE>
+            <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>RP-cmw3wmzt3000266ck7m3pfvln</VOUCHERNUMBER>
+            <NARRATION>Settlement received for order ORD-UNKNOWN</NARRATION>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>No</ISINVOICE>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Bank Account</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>500.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Marketplace Receivable</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>-500.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+          </VOUCHER>
+        </TALLYMESSAGE>
+      
+
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER
+            VCHTYPE="Receipt"
+            ACTION="Create"
+            OBJVIEW="Accounting Voucher View">
+
+            <DATE>20261107</DATE>
+            <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>RP-cmw6eplkb000166isirm6b77b</VOUCHERNUMBER>
+            <NARRATION>Settlement received for order ORD-3003</NARRATION>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>No</ISINVOICE>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Bank Account</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>850.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Marketplace Receivable</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>-850.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+          </VOUCHER>
+        </TALLYMESSAGE>
+      
+
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER
+            VCHTYPE="Receipt"
+            ACTION="Create"
+            OBJVIEW="Accounting Voucher View">
+
+            <DATE>20261107</DATE>
+            <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>RP-cmw6f0azu000766is87mk447e</VOUCHERNUMBER>
+            <NARRATION>Settlement received for order ORD-4001</NARRATION>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>No</ISINVOICE>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Bank Account</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>450.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Marketplace Receivable</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>-450.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+
+          </VOUCHER>
+        </TALLYMESSAGE>
+      
+      </REQUESTDATA>
+    </IMPORTDATA>
+  </BODY>
+</ENVELOPE>

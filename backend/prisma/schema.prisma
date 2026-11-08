@@ -1,0 +1,72 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id           String       @id @default(cuid())
+  name         String
+  email        String       @unique
+  passwordHash String
+  createdAt    DateTime     @default(now())
+
+  orders       Order[]
+  settlements  Settlement[]
+  claims       Claim[]
+}
+
+model Order {
+  id                 String       @id @default(cuid())
+  externalOrderId    String
+  channel            String
+  orderAmount        Decimal      @db.Decimal(12, 2)
+  expectedSettlement Decimal      @db.Decimal(12, 2)
+  status             String       @default("PENDING")
+
+  // Reconciliation fields
+  receivedSettlement Decimal?     @db.Decimal(12, 2)
+  difference         Decimal?     @db.Decimal(12, 2)
+  reconciledAt       DateTime?
+
+  createdAt          DateTime     @default(now())
+
+  userId             String
+  user               User         @relation(fields: [userId], references: [id])
+  settlements        Settlement[]
+  claims             Claim[]
+
+  @@unique([userId, externalOrderId])
+}
+
+model Settlement {
+  id              String   @id @default(cuid())
+  externalOrderId String
+  amount          Decimal  @db.Decimal(12, 2)
+  settlementDate  DateTime
+  sourceFile      String?
+  createdAt       DateTime @default(now())
+
+  userId          String
+  user            User     @relation(fields: [userId], references: [id])
+  orderId         String?
+  order           Order?   @relation(fields: [orderId], references: [id])
+}
+
+model Claim {
+  id        String   @id @default(cuid())
+  amount    Decimal  @db.Decimal(12, 2)
+  reason    String
+  status    String   @default("SUBMITTED")
+  createdAt DateTime @default(now())
+
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  orderId   String?
+  order     Order?   @relation(fields: [orderId], references: [id])
+}
