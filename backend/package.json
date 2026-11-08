@@ -5,9 +5,10 @@
   "description": "ReconcilePro backend",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest --runInBand",
-    "test:watch": "jest --watch"
-  },
+  "start": "node src/server.js",
+  "test": "jest --runInBand",
+  "test:watch": "jest --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
